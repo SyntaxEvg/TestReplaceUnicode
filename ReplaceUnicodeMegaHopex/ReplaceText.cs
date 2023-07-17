@@ -22,7 +22,8 @@ namespace ReplaceUnicodeMegaHopex
                     // Environment.Exit(1);
                 }
 
-                foreach (var file in dir.EnumerateFiles("*.json", SearchOption.AllDirectories))
+                //foreach (var file in dir.EnumerateFiles("*.json", SearchOption.AllDirectories))
+                foreach (var file in dir.EnumerateFiles("*.json|*.htm", SearchOption.AllDirectories))
                 {
                     try
                     {
